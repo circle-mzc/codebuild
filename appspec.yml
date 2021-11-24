@@ -9,8 +9,8 @@ permissions:
     owner: sysadmin
     group: sysadmin
 
-#hooks:
-#  AfterInstall:
-#    - location: start.sh
-#      timeout: 60
-#      runas: sysadmin
+hooks:
+  AfterInstall:
+    - location: start.sh
+      timeout: 60
+      runas: sysadmin
