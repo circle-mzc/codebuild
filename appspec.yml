@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/sysadmin/portal/build/libs/
+permissions:
+  - object : /
+    pattern: "**"
+    owner: sysadmin
+    group: sysadmin
+
+#hooks:
+#  AfterInstall:
+#    - location: start.sh
+#      timeout: 60
+#      runas: sysadmin
